@@ -10,7 +10,7 @@
     vmware_guest:
       hostname: vcenter.netlab.fhict.nl
       username: I513441@fhict.nl
-      password: Supertwins2003
+      password: 
       validate_certs: False
       name: User_PC_Klarie.Molen
       template: NewVM_Test
