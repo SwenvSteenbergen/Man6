@@ -18,7 +18,7 @@
           3463343435366566640a376365373839633161356366343831643035613239326565373833653366
           3966
       validate_certs: False
-      name: User_PC
+      name: User_PC_Swen
       template: NewVM_Test
       datacenter: Netlab-DC
       resource_pool: i513441
