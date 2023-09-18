@@ -1,0 +1,22 @@
+---
+- name: Create a VM
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  become: true
+
+  tasks:
+  - name: Create VM
+    vmware_guest:
+      hostname: vcenter.netlab.fhict.nl
+      username: I513441@fhict.nl
+      password: Supertwins2003
+      validate_certs: False
+      name: User_PC
+      template: NewVM_Test
+      datacenter: Netlab-DC
+      resource_pool: i513441
+      datastore: NIM01-I3-DB
+      folder: /_Courses/i3-DB01/i513441/Automation
+      state: poweredon
+      wait_for_ip_address: no
