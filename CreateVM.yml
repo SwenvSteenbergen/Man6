@@ -12,7 +12,7 @@
       username: I513441@fhict.nl
       password: Supertwins2003
       validate_certs: False
-      name: User_PC_Swen
+      name: User_PC
       template: NewVM_Test
       datacenter: Netlab-DC
       resource_pool: i513441
