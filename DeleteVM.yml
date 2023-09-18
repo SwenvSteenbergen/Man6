@@ -1,0 +1,28 @@
+---
+- name: Delete a VM
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  become: true
+
+  tasks:
+  - name: Delete VM
+    vmware_guest:
+      hostname: vcenter.netlab.fhict.nl
+      username: I513441@fhict.nl
+      password: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          34626139633363623931623334336335366336343166636534666263643238366437323830356634
+          6635343666353462623239646563366338333965616563660a613432333861353165343537613565
+          36326339626230333334663033303965663638663436646638316462363161303438336537363265
+          3332363834383963650a326337646666386662643031316232646432336436663135333063653962
+          3730
+      validate_certs: False
+      name: User_PC
+      template: NewVM_Test
+      datacenter: Netlab-DC
+      resource_pool: i513441
+      datastore: NIM01-I3-DB
+      folder: /_Courses/i3-DB01/i513441/Automation
+      state: absent
+
