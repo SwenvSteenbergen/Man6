@@ -18,8 +18,8 @@
           3332363834383963650a326337646666386662643031316232646432336436663135333063653962
           3730
       validate_certs: False
-      name: User_PC_Profiel.Een
-      template: Template_User_PC_Profiel.Een
+      name: User_PC_Profiel.Twee
+      template: Template_User_PC_Profiel.Twee
       datacenter: Netlab-DC
       resource_pool: i513441
       datastore: NIM01-I3-DB
